@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ConditionalRendering from "./components/ConditionalRendering";
+import Counter from "./components/counter";
+import DataFetcher from "./components/dataFetcher";
+import Form from "./components/Form";
+import InputField from "./components/InputField";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Counter />
+      <DataFetcher />
+      <InputField />
+      <ConditionalRendering />
+      <Form />
     </div>
   );
-}
+};
 
 export default App;
